@@ -8,9 +8,10 @@ isCorrect = False
 count = 0
 while isCorrect == False:
     num = int(input('Enter your number: '))
+    
     count += 1
     if(num < randNum):
-        print(f'{num} is less than the number. keep trying babe')
+        print(f'{int(num)} is less than the number. keep trying babe')
         isCorrect = False
     elif(num > randNum):
         print(f'{num} is too high than the number you\'re searching for, keep trying babe')
@@ -18,6 +19,16 @@ while isCorrect == False:
     elif(num == randNum):
         print(f'finally! you got the number after you\'ve tried {count} times...congratulations')
         isCorrect = True
+        if isCorrect:
+            break
     else:
         print(f'type a correct number')
+    check = input('Do you wanna exit? ')
+    if check == 'yes':
+        print('I exit')
+        break
+        
+    
+    
+
 
