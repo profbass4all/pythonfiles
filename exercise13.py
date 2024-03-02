@@ -3,16 +3,24 @@
 # Make sure to ask the user to enter the number of numbers in the sequence to generate.
 # (Hint: The Fibonnaci seqence is a sequence of numbers where the next number in the sequence is 
 #  the sum of the previous two numbers in the sequence. The sequence looks like this: 1, 1, 2, 3, 5, 8, 13, …)
-a = int(input('Enter the length of fib series: '))
 
-b = [0, 1]
-def fib(a):
-    for i in range (a-2):
-        c = b[-2] + b[-1]
-        b.append(c)
-    return b
+def isFib():
+    a = int(input('Enter the length of fib series: '))
 
-print(fib(a))
+    if a == 0:
+        fib =[]
+    elif a ==1:
+        fib =[0]
+    elif a ==2:
+        fib =[0, 1]
+    elif a > 2:
+        fib = [0,1]
+        for d in range(a-2):
+            g = fib[d] + fib[-1]
+            fib.append(g)
+    return fib
+
+print(isFib())
 
 
 
