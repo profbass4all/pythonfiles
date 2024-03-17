@@ -3,12 +3,13 @@
 
 name = input('Please enter a string: ')
 def isPalindrome(palin):
-    x = len(palin)
-    y = x // 2
+    # x = len(palin)
+    # y = x // 2
 
-    q = palin[0:y + 1]
-    s = palin[-(y + 1):][::-1]
-    if q == s:
+    # q = palin[0:y + 1]
+    # s = palin[-(y + 1):][::-1]
+    s = palin[::-1]
+    if palin == s:
         print('The word is a palindrome')
     else:
         print('The word is not a palindrome')

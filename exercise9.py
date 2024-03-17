@@ -21,8 +21,7 @@ while isCorrect == False:
         isCorrect = True
         if isCorrect:
             break
-    else:
-        print(f'type a correct number')
+    
     check = input('Do you wanna exit? ')
     if check == 'yes':
         print('I exit')
