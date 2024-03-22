@@ -8,7 +8,6 @@ isCorrect = False
 count = 0
 while isCorrect == False:
     num = int(input('Enter your number: '))
-    
     count += 1
     if(num < randNum):
         print(f'{int(num)} is less than the number. keep trying babe')
@@ -21,7 +20,6 @@ while isCorrect == False:
         isCorrect = True
         if isCorrect:
             break
-    
     check = input('Do you wanna exit? ')
     if check == 'yes':
         print('I exit')
