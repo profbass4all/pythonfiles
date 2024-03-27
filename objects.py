@@ -5,7 +5,7 @@ class Vehicle():
 
     def displayInfo(self):
         return f'The name of this vehicle is {self.name} and was made in the year {self.year}'
-    
+    breakpoint()
     def max_speed(self):
         print('My max_speed is 24km/hr')
 
@@ -24,6 +24,7 @@ def carDetails(obj):
 #carDetails(volvo)
 
 for x in (volvo, bmw):
+    breakpoint()
     x.max_speed()
 
 def volume(a, b = 0, c = 0):
